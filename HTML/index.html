@@ -9,48 +9,44 @@
 
     <link rel="stylesheet" href="../CSS/index.css">
     <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="crossorigin="anonymous"></script>
-    <script src="../JS/tabs.js" async></script>
+    <link href="https://fonts.googleapis.com/css?family=Pacifico&display=swap" rel="stylesheet">
+    <script src="../JS/tabs.js" async></script> 
     <script src="../JS/carousel.js" async></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.0.2/TweenMax.min.js" async></script>
 </head>
 <body>
-    <img class="logo" src="../images/logo.png">
+    <!-- <img class="logo" src="../images/logo.png"> -->
 
-    <!-- TOP BAR COMPONENT-->
+    <!-- TOP BAR -->
     <div class="top-bar">
         <div class="container">
             <div class="container-left">
-                <span>SEARCH</span>
+                <a href="#" class="search">SEARCH</a>
+            </div>
+            <div class ="container-center">
+                <a href="./index.html" class="home">HOME</a>
+                <a href="./about.html" class="about">ABOUT US</a>
+                <a href="#" class="contact">CONTACT</a>
             </div>
             <div class="container-right">
-                <span>LOG IN</span>
+                <a href="https://safespace-app.netlify.com/">
+                    <span href="https://safespace-app.netlify.com/">LOG IN</span>
+                </a>
             </div>
         </div>
     </div>
 
-    <!-- HEADER COMPONENT -->
+    <!-- HEADER  -->
     <div class="header">  
         <h1>Safe Space</h1>
-    </div>
-
-    <!-- TABS COMPONENT -->
-    <div class="tabs">
-        <div class="topics">
-          <span class="title">NAVIGATE:</span>
-          <div data-tab="all" class="tab active-tab"></div>
-          <div data-tab="home" class="tab">HOME</div>
-          <div data-tab="aboutus" class="tab">ABOUT US</div>
-          <div data-tab="contact" class="tab">CONTACT</div>
-          <div data-tab="login" class="tab">LOGIN</div>
-        </div>
     </div>
 
     <!-- CAROUSEL -->
     <div class="carousel">
             <div class="left-button"><</div>
+            <img src="../images/plant.jpg" />
             <img src="../images/hands.jpg" />
             <img src="../images/jar.jpg" />
-            <img src="../images/plant.jpg" />
             <img src="../images/thing.jpg" />
             <div class="right-button">></div>
           </div>
@@ -62,12 +58,20 @@
             <a href="#top">Back to Top</a>
         </article>
 
-        <article>
+        <article class="article2">
             <h3>APOIAFJ</h3>
             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent in maximus sem, et luctus ante. Vestibulum vestibulum dolor malesuada nisl eleifend vehicula. Cras maximus eros sit amet ex laoreet, eget varius urna tempus. Duis eget ligula quis turpis congue hendrerit. Phasellus feugiat enim ultrices augue lobortis, sed scelerisque nunc luctus. Ut auctor, erat nec tincidunt eleifend, lorem purus volutpat lectus, et pharetra urna augue posuere dui.</p>
             <a href="#top">Back To Top</a>
         </article>
     </div>
+
+    <div class="footer">
+            <div class="container">
+                <div class="copyright">
+                    <span>Copyright</span>
+                </div>
+            </div>
+        </div>
 </body>
 
 </html>

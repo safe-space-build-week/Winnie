@@ -1,5 +1,5 @@
-@import '../LESS/variables.less';
-@import '../LESS/mixins.less';
+@import './variables.less';
+@import './mixins.less';
 @import url('https://fonts.googleapis.com/css?family=PT+Sans:400,400italic,700,700italic,900');
 
 * {
@@ -16,7 +16,17 @@ body {
     font-family: 'PT Sans', sans-serif;
 }
 
-@import '../LESS/Tabs.less';
-@import '../LESS/TopBar.less';
-@import '../LESS/header.less';
-@import '../LESS/carousel.less';
+@import './TopBar.less';
+@import './header.less';
+@import './carousel.less';
+@import './about.less';
+
+.main-content {
+    
+    .article1 {
+        text-align: center;
+    }
+    .article2 {
+        text-align: center;
+    }
+}
