@@ -21,15 +21,38 @@
         flex-wrap: wrap;
         justify-content: space-between;
 
+        @media @phone {
+            flex-direction: column;
+        }
+
         .text-content {
             width: 48%;
             padding-right: 25%;
+
+            h3 {
+                
+                @media @phone {
+                    text-align: center;
+                }
+            }
+
+            @media @phone {
+                width: 90%;
+                padding-right: 5%;
+                padding-left: 20%;
+            }
         }
     
         .img-content {
             width: 22%;
             margin-left: 28%;
-            border-radius: 500px;
+            padding-top: 5px;
+            border-radius: 50%;
+
+            @media @phone {
+                margin-left: 41%;
+                padding-top: 0;
+            }
 
             &:hover {
                 .propic {
@@ -44,7 +67,7 @@
             
     
             .propic {
-                border-radius: 500px;
+                border-radius: 50%;
                 width: 100%;
                 opacity: 1.0;
                 z-index: 3;
@@ -65,8 +88,8 @@
                         width: 100%;
                     }
                 }
-
             }
         }
-    } 
+    }
 }
+

@@ -21,17 +21,80 @@ body {
 @import './carousel.less';
 @import './about.less';
 
-.main-content {
-    margin: 0% 20% auto;
+.containerHome {
+    .container-section {
+        margin: 40px 0;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
 
-    .article1 {
-        text-align: center;
+        @media @phone {
+            margin: 0px;
+        }
+
+        .textContent {
+            width: 48%;
+            padding-right: 1%;
+            padding-left: 20%;
+
+            @media @phone {
+                width: 100%;
+                padding: 0 20%;
+            }
+        }
+
+        .img-content {
+            width: 48%;
+            padding-left: 11%;
+            padding-top: 5%;
+
+            @media @phone {
+                width: 100%;
+                padding: 0 40%;
+            }
+        }
     }
 
-    .article2 {
-        text-align: center;
+    hr {
+        width: 70%;
+    }
+
+    .inverse-content {
+        padding-bottom: 30px;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+
+        @media @phone {
+            margin-top: 5%;
+        }
+
+        .textContent {
+            width: 48%;
+            padding-left: 1%;
+            padding-right: 20%;;
+
+            @media @phone {
+                width: 100%;
+                padding: 0 20%;
+                order: 1;
+            }
+        }
+
+        .img-content {
+            padding-right: 1%;
+            padding-left: 30%;
+            margin-top: 5%;
+        
+            @media @phone {
+                width: 100%;
+                order: 2;
+                padding-left: 40%;
+            }
+        }
     }
 }
+
 
 .footer {
     // border: 1px solid red;
