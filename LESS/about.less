@@ -1,8 +1,10 @@
 .headerAbout {
     margin-top: 30px;
-    @media(max-width: 500px) {
+
+    @media @phone {
         margin-top: 30px;
     }
+
     h1 {
       font-size: 40px;
       font-family: 'Pacifico', cursive;
@@ -29,17 +31,18 @@
             width: 48%;
             padding-right: 25%;
 
-            h3 {
-                
-                @media @phone {
-                    text-align: center;
-                }
-            }
 
             @media @phone {
                 width: 90%;
                 padding-right: 5%;
                 padding-left: 20%;
+            }
+
+            h3 {
+                
+                @media @phone {
+                    text-align: center;
+                }
             }
         }
     
@@ -48,6 +51,10 @@
             margin-left: 28%;
             padding-top: 5px;
             border-radius: 50%;
+
+            @media @tablet {
+
+            }
 
             @media @phone {
                 margin-left: 41%;
